@@ -1,0 +1,112 @@
+#wrapper{
+	height: 800px;
+	/*-webkit-box-sizing: border-box;*/
+	width: 600px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 0 0 0 0; 
+	position: relative;
+}
+#wrapper #header{
+	height: 200px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#wrapper #game{
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	-webkit-box-sizing:border-box;
+	border: 1px solid orange;
+}
+#wrapper #header .btn{
+	border-radius:5px;
+	height: 30px;
+	width:80px;
+	outline: none; 
+}
+#wrapper #header span{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	display: block;
+	border:1px solid black;
+	transform: translateX(-40px) translateY(-15px);
+	border-radius:5px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width:100px;
+	outline: none; 
+}
+#wrapper .gameover{
+	display: none;
+	width: 200px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: rgb(66,66,66,0.5);
+	color: black;
+	/*font-family: */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-100px,-50px);
+	line-height: 100px;
+}
+#wrapper .gameover p{
+	margin:0;
+	text-align: center;
+}
+#wrapper #game #gamebody{
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-box-sizing:border-box;
+	border: 1px solid red;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*font-size: 0; 这一步是使inline-block,减少间隙 */
+}
+#gamebody li{
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*display: inline-block;*/
+/*	padding: 0;
+	margin: 0;*/
+	border:1px solid red;
+	/*float: right;*/
+}
+#wrapper .gameover .close{
+	font-size: 18px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	height: 18px;
+	width: 18px;
+	text-decoration: none;
+	line-height: 18px;/*必须要设置，因为父元素设置了行高,不然会被默认设置为父元素一样*/
+}
+/*#gamebody li:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 40px;
+}*/
