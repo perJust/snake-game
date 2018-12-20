@@ -94,7 +94,7 @@ function runAdd() {
 function drect(e) {
 	// console.log(e.which);
 	var event = e || window.event;
-	var key = e.keyCode == drectJug[window.initDrect]?null:e.keyCode; //判断按下的键与上一次的方向是否一致，一致的话就不做处理为null
+	var key = e.keyCode == drectJug[window.initDrect]?null:e.keyCode; //判断按下的键与上一次的方向相反，相反的话就不做处理为null
 	switch(key){
 	case 37:window.speedL=-10;window.speedT=0;window.initDrect="left";break;
 	case 38:window.speedL=0;window.speedT=-10;window.initDrect="top";break;
